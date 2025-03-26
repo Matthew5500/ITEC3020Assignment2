@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center my-4">Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="regUsername">Username:</label>
+        <input type="text" class="form-control" id="regUsername" required>
+      </div>
+      <div class="form-group">
+        <label for="regEmail">Email:</label>
+        <input type="email" class="form-control" id="regEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="regPassword">Password:</label>
+        <input type="password" class="form-control" id="regPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="regConfirmPassword">Confirm Password:</label>
+        <input type="password" class="form-control" id="regConfirmPassword" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+  <!-- Custom JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>

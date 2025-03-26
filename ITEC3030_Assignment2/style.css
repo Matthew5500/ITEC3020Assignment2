@@ -1,0 +1,35 @@
+/* Header and footer styling */
+header, footer {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer {
+    background-color: #6c757d; /* Bootstrap secondary color */
+  }
+  
+  /* Navigation bar hover effects */
+  .navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  /* Section styling */
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Form elements styling */
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form input, form textarea, form select {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

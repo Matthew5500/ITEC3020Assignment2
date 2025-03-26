@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-primary text-white p-3">
+    <div class="container">
+      <h1>About Me</h1>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogs.html">Post Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_me.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="inbox.html">Inbox</a></li>
+            <li class="nav-item"><a class="nav-link" href="fare.html">Fare Calculation</a></li>
+            <li class="nav-item"><a class="nav-link" href="logout.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <section id="aboutFormSection">
+      <h2>About</h2>
+      <form id="aboutForm">
+        <div class="form-group">
+          <label for="courseName">Course Name</label>
+          <input type="text" class="form-control" id="courseName" required>
+        </div>
+        <div class="form-group">
+          <label for="courseCode">Course Code</label>
+          <input type="text" class="form-control" id="courseCode" required>
+        </div>
+        <div class="form-group">
+          <label for="instructor">Instructor</label>
+          <input type="text" class="form-control" id="instructor" required>
+        </div>
+        <div class="form-group">
+          <label for="term">Term</label>
+          <input type="text" class="form-control" id="term" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </form>
+    </section>
+
+    <section id="myCourses" class="mt-5">
+      <h2>My Courses</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Course Code</th>
+            <th>Instructor</th>
+            <th>Term</th>
+          </tr>
+        </thead>
+        <tbody id="coursesTable">
+          <!-- Course data loaded from localStorage -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="bg-secondary text-white text-center p-3">
+    <p>&copy; 2025 My Personal Profile</p>
+  </footer>
+
+  <!-- JavaScript dependencies -->
+  <script src="scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
